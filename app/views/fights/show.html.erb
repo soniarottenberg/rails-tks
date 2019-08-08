@@ -1,3 +1,14 @@
 <div class="cyber-container">
-  <%= link_to "register your fighters", new_fight_registration_path(@fight) %>
+  <h1> <%= @fight.title %> </h1>
+  <%= link_to "register your fighters", new_fight_registration_path(@fight), class: "yellow-button" %>
+
+  <div>
+    <ul>
+      <% @fight.fighters.each do |fighter| %>
+        <li><%= fighter.name %></li>
+      <% end %>
+    </ul>
+  </div>
+
+
 </div>

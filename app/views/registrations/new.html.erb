@@ -4,7 +4,9 @@
   <%# raise %>
 
   <%= simple_form_for [@fight, @registration] do |f| %>
-    <%= f.association :fighter, as: :check_boxes %>
+    <%#= f.association :fighter, as: :check_boxes %>
+    <%= f.association :fighter, as: :select %>
+
     <%= f.submit "Save my fight"%>
   <% end %>
 

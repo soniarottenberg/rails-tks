@@ -1,2 +1,21 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>The Killing Spree</h1>
+  <div class="intro">
+    <p>Hello. <br>
+      Welcome to the Killing Spree. <br>
+      The one and only purpose of this place is to watch heroes fight and die.
+      Pick your favorites fighters and see which one are gonna make it...
+    </p>
+  </div>
+
+  <div class="center-all">
+    <%= link_to "create  a new fighter", new_fighter_path, class: "yellow-button" %>
+    <%= link_to "see all fighters", fighters_path, class: "yellow-button" %>
+  </div>
+
+<div class="playground">
+
+</div>
+
+<%= render 'footer' %>
+
+

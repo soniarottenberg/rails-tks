@@ -1,0 +1,8 @@
+<div>
+  <%= @fighter.name %>
+  <%= link_to "edit", edit_fighter_path%>
+  <%= link_to "delete", fighter_path(@fighter),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+</div>
+

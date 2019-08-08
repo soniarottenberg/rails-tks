@@ -1,0 +1,12 @@
+.yellow-button {
+  color: $cyber-yellow;
+  border: 1px solid $cyber-yellow;
+  padding: 8px;
+  width: fit-content;
+}
+
+.yellow-button:hover {
+  text-decoration: none;
+   color: $cyber-purple;
+  border: 1px solid $cyber-purple;
+}

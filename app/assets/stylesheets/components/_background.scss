@@ -1,0 +1,20 @@
+.intro {
+  width: 350px;
+  margin: 0 auto;
+  color: $cyber-yellow;
+  p {
+    text-align: justify;
+  }
+}
+
+.playground {
+  height: 100vh;
+  background-image: asset-url("cyberpunk-street.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.center-all {
+  width: 600px;
+  margin: 0 auto;
+}

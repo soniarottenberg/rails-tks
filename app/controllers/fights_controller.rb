@@ -28,6 +28,6 @@ class FightsController < ApplicationController
   end
 
   def fight_params
-    params.require(:fight).permit()
+    params.require(:fight).permit(:title)
   end
 end

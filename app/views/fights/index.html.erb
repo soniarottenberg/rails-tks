@@ -1,1 +1,8 @@
-<h1>Hall of Fame</h1>
+<div class="cyber-container">
+  <h1>Hall of Fame</h1>
+
+  <% @fights.each do |fight| %>
+  <%= fight.id %>
+  <%= fight.title %>
+  <% end %>
+</div>

@@ -9,7 +9,7 @@ puts "Blood bath ongoing..."
 
 pikachu = Fighter.create!(
   name:"Pikachu",
-  # remote_avatar_url: "https://res.cloudinary.com/diuc2dxj5/image/upload/v1565096488/killing-spree/pikachu-sprite_uhbg68.gif",
+  remote_avatar_url: "https://res.cloudinary.com/diuc2dxj5/image/upload/v1565096488/killing-spree/pikachu-sprite_uhbg68.gif",
   level: 1,
   exp: 0,
   health: 7,
@@ -20,7 +20,7 @@ pikachu = Fighter.create!(
 
 salameche = Fighter.create!(
   name:"Salamèche",
-  # remote_avatar_url: "https://res.cloudinary.com/diuc2dxj5/image/upload/v1565096494/killing-spree/salameche-sprite_n68yoc.gif",
+  remote_avatar_url: "https://res.cloudinary.com/diuc2dxj5/image/upload/v1565096494/killing-spree/salameche-sprite_n68yoc.gif",
   level: 1,
   exp: 0,
   health: 6,

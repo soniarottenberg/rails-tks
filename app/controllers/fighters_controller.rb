@@ -14,8 +14,11 @@ class FightersController < ApplicationController
 
   def create
     @fighter = Fighter.new(fighter_params)
-    @fighter.save
-    redirect_to fighters_path(@fighter)
+    if @fighter.save
+      redirect_to fighters_path(@fighter)
+    else
+      render :new
+    end
   end
 
   def edit
@@ -37,6 +40,6 @@ class FightersController < ApplicationController
   end
 
   def fighter_params
-    params.require(:fighter).permit(:name, :lifepoints, :attack_points, :defense_points, :avatar)
+    params.require(:fighter).permit(:name, :health, :attack, :defense, :avatar)
   end
 end

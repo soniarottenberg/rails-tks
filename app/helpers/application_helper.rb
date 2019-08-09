@@ -1,5 +1,4 @@
 module ApplicationHelper
-
   def damage(fighter1, fighter2)
     damage = fighter1.attack - fighter2.defense
     fighter2.health = fighter2.health - damage
@@ -17,10 +16,4 @@ module ApplicationHelper
       damage(fighter1, fighter2)
     end
   end
-
-  # def combat(fighter1, fighter2)
-  #   until alive(fighter1, fighter2) == true
-  #     damage(fighter1, fighter2)
-  #   end
-  # end
 end

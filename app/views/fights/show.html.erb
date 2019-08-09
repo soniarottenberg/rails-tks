@@ -25,7 +25,11 @@
     </div>
 
     <div class="py-3">
-      <p><%= alive(@fight.fighters[0], @fight.fighters[1]) %></p>
+
+      <% if @fight.fighters[1] %>
+        <%= render 'fight', fight: @fight %>
+      <% end %>
+
     </div>
 
 

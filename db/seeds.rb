@@ -1,3 +1,4 @@
+Registration.destroy_all
 Fighter.destroy_all
 Fight.destroy_all
 

@@ -1,14 +1,36 @@
 <div class="cyber-container">
   <h1> <%= @fight.title %> </h1>
-  <%= link_to "register your fighters", new_fight_registration_path(@fight), class: "yellow-button" %>
-
-  <div>
-    <ul>
-      <% @fight.fighters.each do |fighter| %>
-        <li><%= fighter.name %></li>
-      <% end %>
-    </ul>
+  <div class="py-3">
+    <%= link_to "register your fighters", new_fight_registration_path(@fight), class: "yellow-button" %>
   </div>
 
+  <hr>
 
+  <div>
+    <h2>Playground</h2>
+
+    <div class="d-flex justify-content-between">
+      <% @fight.fighters.each do |fighter| %>
+        <div class="yellow-card">
+          <div><%= fighter.name %></div>
+          <div>Level <%= fighter.level %> (exp. <%= fighter.exp %>)</div>
+          <div class="p-3">
+            <%= cl_image_tag fighter.avatar, alt: "fighter", height: 50 %>
+          </div>
+          <div>Life Points <%= fighter.health %></div>
+          <div>Attack Points <%= fighter.attack %></div>
+          <div>Defense Points <%= fighter.defense %></div>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="py-3">
+      <p><%= alive(@fight.fighters[0], @fight.fighters[1]) %></p>
+    </div>
+
+
+
+
+  </div>
 </div>
+

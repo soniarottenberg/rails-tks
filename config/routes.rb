@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
+  get 'action', to: 'fights#action', as: 'action'
+
   resources :fighters
   resources :fights do
     resources :registrations
